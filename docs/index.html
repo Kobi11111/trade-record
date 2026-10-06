@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Trade Desk Record</title>
+<meta name="description" content="A timestamp-proven record of daily picks. Paper / hypothetical results – not real trades. Not investment advice.">
+<style>
+:root{--bg:#f6f7fb;--panel:#ffffff;--ink:#14162b;--ink2:#3e4263;--mute:#6b6f8f;--line:#e3e5f0;--good:#0f9d6b;--bad:#d63c4a;
+  --warn-bg:#fff4d6;--warn-ink:#7a5200;--warn-line:#f1d58a;--accent:#5b4ee6;--chip:#eef0fb;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d0e1a;--panel:#161829;--ink:#f2f2fb;--ink2:#c3c5de;--mute:#8d90b0;
+  --line:#272a44;--good:#3fd69f;--bad:#ff6b78;--warn-bg:#2d2410;--warn-ink:#ffd57a;--warn-line:#5c4a1c;--accent:#9d93ff;--chip:#1f2238}}
+:root[data-theme="dark"]{--bg:#0d0e1a;--panel:#161829;--ink:#f2f2fb;--ink2:#c3c5de;--mute:#8d90b0;--line:#272a44;--good:#3fd69f;--bad:#ff6b78;
+  --warn-bg:#2d2410;--warn-ink:#ffd57a;--warn-line:#5c4a1c;--accent:#9d93ff;--chip:#1f2238}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.label{position:sticky;top:0;z-index:5;background:var(--warn-bg);color:var(--warn-ink);border-bottom:1px solid var(--warn-line);
+  padding:9px 16px;font-weight:650;font-size:13.5px;text-align:center}
+main{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:24px;margin:6px 0 4px;letter-spacing:-.01em} h2{font-size:17px;margin:30px 0 10px}
+.sub{color:var(--mute);margin:0 0 18px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.tile .k{color:var(--mute);font-size:12.5px} .tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px}
+.chartlabel{font-size:12px;color:var(--warn-ink);background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:4px 8px;display:inline-block;margin-bottom:8px}
+svg.chart{width:100%;height:200px;display:block}
+.day{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-top:10px}
+.day h3{margin:0 0 6px;font-size:15.5px}
+.slot{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:13px;color:var(--ink2);padding:6px 0;border-top:1px dashed var(--line)}
+.slot:first-of-type{border-top:0}
+.hash{font-family:var(--mono);font-size:12px;background:var(--chip);padding:2px 6px;border-radius:6px;word-break:break-all}
+a{color:var(--accent)} button{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:8px;padding:3px 9px;cursor:pointer}
+.ok{color:var(--good);font-weight:650} .no{color:var(--bad);font-weight:650} .pend{color:var(--mute)}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+.tbl th,.tbl td{text-align:left;padding:6px 6px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+.tbl th{color:var(--mute);font-weight:600;font-size:12px;border-top:0}
+.wrap{overflow-x:auto}
+.r-pos{color:var(--good);font-weight:650} .r-neg{color:var(--bad);font-weight:650}
+ol.steps{padding-left:20px;margin:6px 0} ol.steps li{margin:4px 0} code{font-family:var(--mono);font-size:12.5px;background:var(--chip);padding:1px 5px;border-radius:5px;word-break:break-all}
+.foot{color:var(--mute);font-size:12.5px;margin-top:34px;border-top:1px solid var(--line);padding-top:12px}
+@media (max-width:520px){.tbl .hide-s{display:none} h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="label" id="label"></div>
+<main>
+  <h1>Trade Desk · daily picks record</h1>
+  <p class="sub" id="sub"></p>
+  <div class="tiles" id="tiles"></div>
+  <div class="card"><span class="chartlabel" id="chartlabel"></span><div id="chart"></div></div>
+  <h2>Every day, as committed</h2>
+  <div id="days"></div>
+  <h2>Paper books</h2>
+  <div class="card"><span class="chartlabel" id="paperlabel"></span><div class="wrap" id="paper"></div></div>
+  <h2>How to verify</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>At 06:35 and 12:10 (Los Angeles) the picks, their publish time and a random nonce are hashed with SHA-256. Only the hash is pushed to the public repo, before the picks are sent anywhere. The commit link next to each slot shows when.</li>
+      <li>After the close, the exact hashed text is published as <code>reveals/&lt;date&gt;_&lt;slot&gt;.json</code>.</li>
+      <li>Check it yourself: <code>sha256sum reveals/&lt;date&gt;_&lt;slot&gt;.json</code> (macOS: <code>shasum -a 256</code>) must print the same hash. Or tap <b>Verify</b> next to a slot: your browser downloads the file from GitHub and hashes it locally.</li>
+      <li>Closed results are appended to <code>trades/*.jsonl</code> and are never edited or deleted. The git history shows every change.</li>
+    </ol>
+    <p class="pend" style="margin:6px 0 0">R = result divided by the planned risk (entry to stop). +1R means the trade made what it risked. Results of the daily picks come from the paper account when it filled them, otherwise they are simulated from daily bars (marked).</p>
+  </div>
+  <div class="foot" id="foot"></div>
+</main>
+<script>
+const D = {"start": "2026-10-07", "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.", "updated": "2026-10-06T09:24:44Z", "repo": "https://github.com/Kobi11111/trade-record", "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main", "summary": {"n": 0, "win_pct": null, "avg_r": null, "total_r": 0.0, "max_dd_r": 0.0, "curve": []}, "open": 0, "days": [], "paper": {}};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fR = v => v == null ? '—' : (v > 0 ? '+' : '') + Number(v).toFixed(2) + 'R';
+const cls = v => v == null ? '' : v > 0 ? 'r-pos' : v < 0 ? 'r-neg' : '';
+const slotT = s => s ? s.slice(0, 2) + ':' + s.slice(2) : '';
+const S = D.summary;
+['#label', '#chartlabel', '#paperlabel'].forEach(s => $(s).textContent = D.label);
+$('#sub').innerHTML = `Since ${esc(D.start)} · fixed start, nothing deleted · updated ${esc(D.updated.replace('T', ' ').replace('Z', ' UTC'))} · <a href="${esc(D.repo)}">repository</a>`;
+const tile = (k, v, c = '') => `<div class="tile"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`;
+$('#tiles').innerHTML = tile('Closed trades', S.n) + tile('Win rate', S.win_pct == null ? '—' : S.win_pct + '%') + tile('Average R', fR(S.avg_r), cls(S.avg_r))
+  + tile('Total R', fR(S.total_r), cls(S.total_r)) + tile('Max drawdown', S.n ? fR(S.max_dd_r) : '—', S.max_dd_r < 0 ? 'r-neg' : '') + tile('Open now', D.open);
+function chart(c) {
+  if (!c || c.length < 2) return '<p class="pend" style="margin:4px 0">The cumulative R curve starts with the first closed trade.</p>';
+  const pts = [0].concat(c), W = 800, H = 200, P = 26, lo = Math.min(0, ...pts), hi = Math.max(0, ...pts) || 1;
+  const x = i => P + (W - 2 * P) * i / (pts.length - 1), y = v => H - P - (H - 2 * P) * (v - lo) / ((hi - lo) || 1);
+  const d = pts.map((v, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Cumulative R, ${esc(D.label)}">
+    <line x1="${P}" x2="${W - P}" y1="${y(0)}" y2="${y(0)}" stroke="currentColor" stroke-opacity=".25" stroke-dasharray="4 4"/>
+    <path d="${d}" fill="none" stroke="var(--accent)" stroke-width="3" vector-effect="non-scaling-stroke"/>
+    <text x="${W - P}" y="16" font-size="13" text-anchor="end" fill="currentColor">${fR(pts[pts.length - 1])} cumulative</text></svg>`;
+}
+$('#chart').innerHTML = chart(S.curve);
+$('#days').innerHTML = (D.days.length ? D.days : []).map(d => {
+  const slots = d.slots.map(s => `<div class="slot"><b>${slotT(s.slot)} LA</b><span>${s.n_picks} pick${s.n_picks === 1 ? '' : 's'}</span>
+      <span class="hash" title="SHA-256">${esc(s.sha256)}</span>
+      ${s.commit_sha ? `<a href="${esc(D.repo)}/commit/${esc(s.commit_sha)}">commit ↗</a>` : ''}
+      ${s.revealed ? `<button type="button" data-v="${esc(d.date)}_${esc(s.slot)}" data-h="${esc(s.sha256)}">Verify</button><span class="vres"></span>` : '<span class="pend">details after the close</span>'}</div>`).join('');
+  const rows = d.picks.map(p => `<tr><td><b>${esc(p.ticker)}</b></td><td class="hide-s">${esc(p.side)}</td><td>${p.entry ?? '—'}</td><td>${p.stop ?? '—'}</td><td>${p.target ?? '—'}</td>
+      <td class="${cls(p.r)}">${p.r != null ? fR(p.r) : esc(p.status)}${p.outcome === 'simulated from daily bars' ? ' <span class="pend">(sim)</span>' : ''}</td></tr>`).join('');
+  return `<div class="day"><h3>${esc(d.date)}</h3>${slots}${rows ? `<div class="wrap"><table class="tbl"><thead><tr><th>Ticker</th><th class="hide-s">Side</th><th>Entry</th><th>Stop</th><th>Target</th><th>Result</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}</div>`;
+}).join('') || `<div class="day pend">The first picks are committed on ${esc(D.start)} at 06:35 LA.</div>`;
+const books = Object.entries(D.paper || {});
+$('#paper').innerHTML = books.length ? `<table class="tbl"><thead><tr><th>Book</th><th>Trades</th><th>Win rate</th><th>Avg R</th><th>Total R</th><th>Max DD</th></tr></thead><tbody>${books.map(([b, s]) =>
+  `<tr><td>${esc({stock: 'Stock', call: 'Call', spread: 'Spread'}[b] || b)}</td><td>${s.n}</td><td>${s.win_pct ?? '—'}%</td><td class="${cls(s.avg_r)}">${fR(s.avg_r)}</td><td class="${cls(s.total_r)}">${fR(s.total_r)}</td><td>${fR(s.max_dd_r)}</td></tr>`).join('')}</tbody></table>
+  <p class="pend" style="margin:8px 0 0">Paper broker fills since ${esc(D.start)}. These entries are not pre-committed like the daily picks.</p>`
+  : `<p class="pend" style="margin:4px 0">No closed paper trades since ${esc(D.start)} yet.</p>`;
+$('#foot').innerHTML = `${esc(D.label)} Past results do not predict future results. Data: <a href="record.json">record.json</a> · <a href="${esc(D.repo)}">${esc(D.repo.replace('https://', ''))}</a>`;
+document.addEventListener('click', async e => {
+  const b = e.target.closest('button[data-v]'); if (!b) return;
+  const out = b.nextElementSibling; out.textContent = ' checking…'; out.className = 'vres pend';
+  try {
+    const buf = await (await fetch(`${D.raw}/reveals/${b.dataset.v}.json`, {cache: 'no-store'})).arrayBuffer();
+    const h = [...new Uint8Array(await crypto.subtle.digest('SHA-256', buf))].map(x => x.toString(16).padStart(2, '0')).join('');
+    const ok = h === b.dataset.h; out.textContent = ok ? ' ✓ matches' : ' ✗ does not match'; out.className = 'vres ' + (ok ? 'ok' : 'no');
+  } catch (err) { out.textContent = ' could not fetch the file'; out.className = 'vres no'; }
+});
+</script>
+</body>
+</html>

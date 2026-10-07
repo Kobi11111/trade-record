@@ -62,12 +62,25 @@ ol.steps{padding-left:20px;margin:6px 0} ol.steps li{margin:4px 0} code{font-fam
       <li>Check it yourself: <code>sha256sum reveals/&lt;date&gt;_&lt;slot&gt;.json</code> (macOS: <code>shasum -a 256</code>) must print the same hash. Or tap <b>Verify</b> next to a slot: your browser downloads the file from GitHub and hashes it locally.</li>
       <li>Closed results are appended to <code>trades/*.jsonl</code> and are never edited or deleted. The git history shows every change.</li>
     </ol>
-    <p class="pend" style="margin:6px 0 0">R = result divided by the planned risk (entry to stop). +1R means the trade made what it risked. Results of the daily picks come from the paper account when it filled them, otherwise they are simulated from daily bars (marked).</p>
+    <p class="pend" style="margin:6px 0 0">R = result divided by the planned risk (entry to stop). +1R means the trade made what it risked.</p>
+  </div>
+  <h2>📏 How we measure</h2>
+  <div class="card">
+    <ol class="steps">
+      <li><b>What is in the record.</b> Only the daily picks published at 06:35 and 12:10 (Los Angeles): the top picks the desk chooses from all its sources, its lab strategies included. No personal trades. A ticker counts once per day. The paper books table below is separate.</li>
+      <li><b>When a pick counts.</b> Only if the price touched the entry within the next 2 trading days. Picks are published after the 06:30 LA open, and a daily bar cannot show whether a same-day touch came before or after that time, so the window starts the next trading day. No touch = <i>not triggered</i>: it is shown, but it is in no statistic.</li>
+      <li><b>Fill.</b> At the entry price, or at the open when the stock opened past it.</li>
+      <li><b>How it ends.</b> Whichever comes first: the stop = a loss, the target = a win. Stop and target on the same day = the stop (the cautious reading). Opening through the stop = out at the open, which can be worse than −1R. Neither after 20 trading days = out at that day's close.</li>
+      <li><b>Prices.</b> Daily bars from Alpaca (IEX feed: one exchange, so highs and lows can be a little narrower than the whole market), unadjusted. Results are simulated from these bars, not from real fills.</li>
+      <li><b>R.</b> (exit − fill) ÷ (fill − stop); mirrored for a short.</li>
+      <li><b>The six numbers.</b> <i>Closed trades</i>: triggered picks that ended. <i>Win rate</i>: the share of them with R above 0. <i>Average R</i>: their mean. <i>Total R</i>: their sum. <i>Max drawdown</i>: the largest fall of the running total R from its highest point, trades in the order they closed. <i>Open now</i>: triggered and not ended yet.</li>
+      <li><b>The rules are fixed</b> from the start date. A change would be listed here with its date and would never be applied to past results.</li>
+    </ol>
   </div>
   <div class="foot" id="foot"></div>
 </main>
 <script>
-const D = {"start": "2026-10-07", "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.", "updated": "2026-10-07T00:48:17Z", "repo": "https://github.com/Kobi11111/trade-record", "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main", "summary": {"n": 0, "win_pct": null, "avg_r": null, "total_r": 0.0, "max_dd_r": 0.0, "curve": []}, "open": 0, "days": [], "paper": {}};
+const D = {"start": "2026-10-07", "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.", "updated": "2026-10-07T01:16:38Z", "repo": "https://github.com/Kobi11111/trade-record", "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main", "summary": {"n": 0, "win_pct": null, "avg_r": null, "total_r": 0.0, "max_dd_r": 0.0, "curve": []}, "open": 0, "days": [], "paper": {}};
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fR = v => v == null ? '—' : (v > 0 ? '+' : '') + Number(v).toFixed(2) + 'R';

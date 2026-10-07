@@ -10,4 +10,4 @@ Verify a day: `sha256sum reveals/2026-10-07_0635.json` (macOS: `shasum -a 256`) 
 morning in `commits/2026-10-07.json` — see the commit history for when it was pushed.
 
 Results are in R (1R = the planned distance from entry to stop). Closed results are appended to `trades/*.jsonl` and never
-rewritten or deleted. Start date: 2026-10-07. Page: https://kobi11111.github.io/trade-record/
+rewritten or deleted. Start date: 2026-10-07. Page: https://record.kcventures.xyz/

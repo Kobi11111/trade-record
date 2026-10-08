@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-08T19:10:07Z",
+ "updated": "2026-10-08T21:00:06Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -25,7 +25,7 @@
      "sha256": "4f239519c647b1b0d41ff67347b1e38b63689bf4e95a0145731eba320a30b6fd",
      "n_picks": 3,
      "commit_sha": "33db54cf4957f35ba9142a4c525f930d583f5ba2",
-     "revealed": 0
+     "revealed": 1
     },
     {
      "slot": "0635",
@@ -33,10 +33,76 @@
      "sha256": "b1b8ed995dfafa9a47aadd0a90953d15a6db4dc41c0abbb4ffa26501ebdfb61e",
      "n_picks": 3,
      "commit_sha": "8650f4630befc4ca13e05db47819d17040ffac65",
-     "revealed": 0
+     "revealed": 1
     }
    ],
-   "picks": []
+   "picks": [
+    {
+     "ticker": "SHEL",
+     "side": "long",
+     "entry": 99.47,
+     "stop": 93.45,
+     "target": 124.34,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "MPC",
+     "side": "long",
+     "entry": 449.08,
+     "stop": 417.64,
+     "target": 561.35,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "ECO",
+     "side": "long",
+     "entry": 92.33,
+     "stop": 85.87,
+     "target": 115.41,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "DINO",
+     "side": "long",
+     "entry": 118.5,
+     "stop": 110.21,
+     "target": 136.28,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "PSX",
+     "side": "long",
+     "entry": 277.4,
+     "stop": 257.98,
+     "target": 346.75,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    }
+   ]
   },
   {
    "date": "2026-10-07",

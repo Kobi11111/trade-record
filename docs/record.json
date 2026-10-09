@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-09T19:10:11Z",
+ "updated": "2026-10-09T21:00:14Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -25,7 +25,7 @@
      "sha256": "d10bfb01a511aae8beed22e87ac6cd66ea33ea8b6af37197cd07cf05de2fc0b8",
      "n_picks": 3,
      "commit_sha": "ebce4ad97dccbc2ca58b06658582c277f3ce5935",
-     "revealed": 0
+     "revealed": 1
     },
     {
      "slot": "0635",
@@ -33,10 +33,89 @@
      "sha256": "390855b951e14655e68066ed7ea18d04024cfb1c46256601a86154d4d6b3b6d5",
      "n_picks": 3,
      "commit_sha": "ece89f35ddcdba6810dca798e81507c47ec9de69",
-     "revealed": 0
+     "revealed": 1
     }
    ],
-   "picks": []
+   "picks": [
+    {
+     "ticker": "HNGE",
+     "side": "long",
+     "entry": 100.36,
+     "stop": 93.33,
+     "target": 115.41,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "DAL",
+     "side": "put",
+     "entry": 78.08,
+     "stop": 82.2,
+     "target": 70.5,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "NTNX",
+     "side": "long",
+     "entry": 74.42,
+     "stop": 69.21,
+     "target": 85.58,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "AMT",
+     "side": "long",
+     "entry": 179.98,
+     "stop": 172.41,
+     "target": 224.97,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "CBOE",
+     "side": "long",
+     "entry": 298.97,
+     "stop": 286.74,
+     "target": 373.71,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "ULTA",
+     "side": "long",
+     "entry": 566.79,
+     "stop": 539.24,
+     "target": 708.49,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    }
+   ]
   },
   {
    "date": "2026-10-08",

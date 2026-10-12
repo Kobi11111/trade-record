@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-12T19:10:14Z",
+ "updated": "2026-10-12T21:00:07Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -25,7 +25,7 @@
      "sha256": "76a8fa191ffc23a25b30f939b427d3fcbae675b8d8ffa4315edcfe7a3b96dca3",
      "n_picks": 3,
      "commit_sha": "9dcf0b0f5f395028f6c5065d0e4fbe802eed7371",
-     "revealed": 0
+     "revealed": 1
     },
     {
      "slot": "0635",
@@ -33,10 +33,76 @@
      "sha256": "f0425f2aa07de6e395dd51517d1b883f654a50a8a3c0284b96eb7c79187cdad5",
      "n_picks": 3,
      "commit_sha": "bc1bb73b8305ca4588ee39c632cb760d61602211",
-     "revealed": 0
+     "revealed": 1
     }
    ],
-   "picks": []
+   "picks": [
+    {
+     "ticker": "TRMD",
+     "side": "long",
+     "entry": 41.59,
+     "stop": 38.68,
+     "target": 51.99,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "BIIB",
+     "side": "long",
+     "entry": 237.34,
+     "stop": 220.73,
+     "target": 296.68,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "OSCR",
+     "side": "long",
+     "entry": 34.48,
+     "stop": 32.07,
+     "target": 39.65,
+     "slot": "0635",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "BTC",
+     "side": "long",
+     "entry": 81500.0,
+     "stop": 79800.0,
+     "target": 86800.0,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    },
+    {
+     "ticker": "JPM",
+     "side": "long",
+     "entry": 338.0,
+     "stop": 329.0,
+     "target": 360.0,
+     "slot": "1210",
+     "status": "no data yet",
+     "r": null,
+     "exit_reason": null,
+     "r_now": null,
+     "outcome": null
+    }
+   ]
   },
   {
    "date": "2026-10-09",

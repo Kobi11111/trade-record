@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-12T21:00:07Z",
+ "updated": "2026-10-13T13:35:09Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -13,9 +13,41 @@
   "curve": []
  },
  "open": 0,
+ "vs_spy": {
+  "closed": {
+   "n": 0,
+   "avg_alpha_pct": null,
+   "beat": 0,
+   "beat_pct": null,
+   "avg_ret_pct": null,
+   "avg_spy_pct": null
+  },
+  "open": {
+   "n": 0,
+   "avg_alpha_pct": null,
+   "beat": 0,
+   "beat_pct": null,
+   "avg_ret_pct": null,
+   "avg_spy_pct": null
+  }
+ },
  "not_triggered": 0,
  "rules_final": "2026-10-06",
  "days": [
+  {
+   "date": "2026-10-13",
+   "slots": [
+    {
+     "slot": "0635",
+     "published_at": "2026-10-13T13:35:03Z",
+     "sha256": "f9c905fe056d88eda1074fb9ee80a53224db29b8bd578a2ef1181a25cfeb9328",
+     "n_picks": 0,
+     "commit_sha": "36de58217b80b35bf0cb7df5faa67fd289f8563d",
+     "revealed": 0
+    }
+   ],
+   "picks": []
+  },
   {
    "date": "2026-10-12",
    "slots": [
@@ -48,7 +80,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "BIIB",
@@ -61,7 +94,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "OSCR",
@@ -74,7 +108,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "BTC",
@@ -87,7 +122,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "JPM",
@@ -100,7 +136,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     }
    ]
   },
@@ -136,7 +173,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "DAL",
@@ -149,7 +187,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "NTNX",
@@ -162,7 +201,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "AMT",
@@ -175,7 +215,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "CBOE",
@@ -188,7 +229,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "ULTA",
@@ -201,7 +243,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     }
    ]
   },
@@ -237,7 +280,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "MPC",
@@ -250,7 +294,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "ECO",
@@ -263,7 +308,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "DINO",
@@ -276,7 +322,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "PSX",
@@ -289,7 +336,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     }
    ]
   },
@@ -325,7 +373,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "MPC",
@@ -338,7 +387,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     },
     {
      "ticker": "XP",
@@ -351,7 +401,8 @@
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null
+     "outcome": null,
+     "vs": null
     }
    ]
   }

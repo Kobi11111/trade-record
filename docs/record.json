@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-27T21:00:16Z",
+ "updated": "2026-10-28T13:35:06Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -41,6 +41,20 @@
  "not_triggered": 2,
  "rules_final": "2026-10-06",
  "days": [
+  {
+   "date": "2026-10-28",
+   "slots": [
+    {
+     "slot": "0635",
+     "published_at": "2026-10-28T13:35:01Z",
+     "sha256": "5c5305c0d38ee6a01dbd777bfdde0ce0bc47bd9f5cfbca7ddd12dfaace1b3af9",
+     "n_picks": 0,
+     "commit_sha": "aa594108b35205e3230db111f6cddae96ce81e90",
+     "revealed": 0
+    }
+   ],
+   "picks": []
+  },
   {
    "date": "2026-10-27",
    "slots": [

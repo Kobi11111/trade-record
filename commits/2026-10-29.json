@@ -6,6 +6,12 @@
    "published_at": "2026-10-29T13:35:02Z",
    "sha256": "7839d5762c16649b609ab84e2e1f53a70262a3a5f3971824869ea34ee920feb6",
    "slot": "0635"
+  },
+  {
+   "n_picks": 3,
+   "published_at": "2026-10-29T19:10:06Z",
+   "sha256": "bfb9f1df4540b8513347098ba0fb1cb4926b0f0f87b9c5a478310f78efdf28a5",
+   "slot": "1210"
   }
  ]
 }

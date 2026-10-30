@@ -1,1 +1,3 @@
 {"book": "spread", "closed": "2026-10-22", "exit_reason": "stock_stop", "key": "paper|1523", "opened": "2026-10-21", "r": -3.399, "recorded_at": "2026-10-23T21:00:17Z", "side": "long", "ticker": "SMCI"}
+{"book": "spread", "closed": "2026-10-30", "exit_reason": "dte21", "key": "paper|935", "opened": "2026-10-14", "r": -2.143, "recorded_at": "2026-10-30T21:00:35Z", "side": "put", "ticker": "BAC"}
+{"book": "spread", "closed": "2026-10-30", "exit_reason": "profit50", "key": "paper|2484", "opened": "2026-10-30", "r": -2.928, "recorded_at": "2026-10-30T21:00:35Z", "side": "put", "ticker": "NOW"}

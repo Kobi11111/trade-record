@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-10-30T19:10:11Z",
+ "updated": "2026-10-30T21:00:41Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -21,7 +21,7 @@
    -10.254
   ]
  },
- "open": 23,
+ "open": 26,
  "vs_spy": {
   "closed": {
    "n": 8,
@@ -32,12 +32,12 @@
    "avg_spy_pct": -0.9
   },
   "open": {
-   "n": 23,
-   "avg_alpha_pct": 1.95,
-   "beat": 16,
-   "beat_pct": 69.6,
-   "avg_ret_pct": 1.75,
-   "avg_spy_pct": -0.2
+   "n": 26,
+   "avg_alpha_pct": 3.41,
+   "beat": 20,
+   "beat_pct": 76.9,
+   "avg_ret_pct": 1.71,
+   "avg_spy_pct": -1.71
   }
  },
  "not_triggered": 4,
@@ -52,7 +52,7 @@
      "sha256": "506e72113df04774f644161be60c335fd9613a5dcf5420b0f56841c3fced6e7e",
      "n_picks": 3,
      "commit_sha": "1271227f610ff5ee20c6bd0b7f8cf45d3b7114fb",
-     "revealed": 0
+     "revealed": 1
     },
     {
      "slot": "0635",
@@ -60,10 +60,68 @@
      "sha256": "3c3b2c8ebe628f89398dfe6cfcd02f34b5c4f33746e6a244c2a4f7b8055eb87e",
      "n_picks": 0,
      "commit_sha": "86f5b2bdb1e3b1dd5165adadbf80610477ef7d19",
-     "revealed": 0
+     "revealed": 1
     }
    ],
-   "picks": []
+   "picks": [
+    {
+     "ticker": "AJG",
+     "side": "long",
+     "entry": 273.07,
+     "stop": 253.96,
+     "target": 341.34,
+     "slot": "1210",
+     "status": "open",
+     "r": null,
+     "exit_reason": null,
+     "r_now": 0.015,
+     "outcome": null,
+     "vs": {
+      "alpha_pct": -0.32,
+      "final": false,
+      "ret_pct": 0.12,
+      "spy_pct": 0.44
+     }
+    },
+    {
+     "ticker": "COIN",
+     "side": "put",
+     "entry": 138.7,
+     "stop": 148.5,
+     "target": 124.0,
+     "slot": "1210",
+     "status": "open",
+     "r": null,
+     "exit_reason": null,
+     "r_now": -0.495,
+     "outcome": null,
+     "vs": {
+      "alpha_pct": -3.94,
+      "final": false,
+      "ret_pct": -3.5,
+      "spy_pct": 0.44
+     }
+    },
+    {
+     "ticker": "RBLX",
+     "side": "put",
+     "entry": 43.49,
+     "stop": 47.75,
+     "target": 38.0,
+     "slot": "1210",
+     "status": "open",
+     "r": null,
+     "exit_reason": null,
+     "r_now": -0.097,
+     "outcome": null,
+     "vs": {
+      "alpha_pct": -1.64,
+      "final": false,
+      "ret_pct": -1.2,
+      "spy_pct": 0.44
+     }
+    }
+   ]
   },
   {
    "date": "2026-10-29",
@@ -96,13 +154,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.093,
+     "r_now": 0.607,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.37,
+      "alpha_pct": 5.46,
       "final": false,
-      "ret_pct": 0.6,
-      "spy_pct": 0.23
+      "ret_pct": 3.9,
+      "spy_pct": -1.57
      }
     },
     {
@@ -115,13 +173,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.088,
+     "r_now": 0.321,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.39,
+      "alpha_pct": 3.84,
       "final": false,
-      "ret_pct": 0.62,
-      "spy_pct": 0.23
+      "ret_pct": 2.28,
+      "spy_pct": -1.57
      }
     },
     {
@@ -134,13 +192,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.029,
+     "r_now": 0.052,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.02,
+      "alpha_pct": 2.01,
       "final": false,
-      "ret_pct": 0.25,
-      "spy_pct": 0.23
+      "ret_pct": 0.44,
+      "spy_pct": -1.57
      }
     }
    ]
@@ -176,13 +234,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.704,
+     "r_now": 1.173,
      "outcome": null,
      "vs": {
-      "alpha_pct": -2.99,
+      "alpha_pct": 6.18,
       "final": false,
-      "ret_pct": -2.77,
-      "spy_pct": 0.22
+      "ret_pct": 4.61,
+      "spy_pct": -1.57
      }
     },
     {
@@ -195,13 +253,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.337,
+     "r_now": -0.886,
      "outcome": null,
      "vs": {
-      "alpha_pct": -4.41,
+      "alpha_pct": -10.12,
       "final": false,
-      "ret_pct": -4.61,
-      "spy_pct": -0.2
+      "ret_pct": -12.11,
+      "spy_pct": -1.99
      }
     },
     {
@@ -214,13 +272,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.083,
+     "r_now": -0.58,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.89,
+      "alpha_pct": -2.83,
       "final": false,
-      "ret_pct": 0.69,
-      "spy_pct": -0.2
+      "ret_pct": -4.82,
+      "spy_pct": -1.99
      }
     }
    ]
@@ -256,13 +314,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.818,
+     "r_now": 0.186,
      "outcome": null,
      "vs": {
-      "alpha_pct": 6.76,
+      "alpha_pct": 3.4,
       "final": false,
-      "ret_pct": 6.66,
-      "spy_pct": -0.09
+      "ret_pct": 1.51,
+      "spy_pct": -1.88
      }
     },
     {
@@ -275,13 +333,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.116,
+     "r_now": -0.217,
      "outcome": null,
      "vs": {
-      "alpha_pct": -0.88,
+      "alpha_pct": 0.06,
       "final": false,
-      "ret_pct": -0.97,
-      "spy_pct": -0.09
+      "ret_pct": -1.82,
+      "spy_pct": -1.88
      }
     },
     {
@@ -294,13 +352,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.352,
+     "r_now": 0.265,
      "outcome": null,
      "vs": {
-      "alpha_pct": 3.15,
+      "alpha_pct": 4.18,
       "final": false,
-      "ret_pct": 3.06,
-      "spy_pct": -0.09
+      "ret_pct": 2.3,
+      "spy_pct": -1.88
      }
     }
    ]
@@ -336,13 +394,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.078,
+     "r_now": -0.761,
      "outcome": null,
      "vs": {
-      "alpha_pct": -0.36,
+      "alpha_pct": -0.98,
       "final": false,
-      "ret_pct": 0.23,
-      "spy_pct": 0.58
+      "ret_pct": -2.2,
+      "spy_pct": -1.22
      }
     },
     {
@@ -383,13 +441,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.276,
+     "r_now": 0.149,
      "outcome": null,
      "vs": {
-      "alpha_pct": 1.75,
+      "alpha_pct": 2.51,
       "final": false,
-      "ret_pct": 2.26,
-      "spy_pct": 0.51
+      "ret_pct": 1.22,
+      "spy_pct": -1.29
      }
     },
     {
@@ -402,13 +460,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.315,
+     "r_now": 0.193,
      "outcome": null,
      "vs": {
-      "alpha_pct": 1.76,
+      "alpha_pct": 2.68,
       "final": false,
-      "ret_pct": 2.27,
-      "spy_pct": 0.51
+      "ret_pct": 1.39,
+      "spy_pct": -1.29
      }
     }
    ]
@@ -598,13 +656,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.699,
+     "r_now": 0.762,
      "outcome": null,
      "vs": {
-      "alpha_pct": 3.71,
+      "alpha_pct": 5.89,
       "final": false,
-      "ret_pct": 4.21,
-      "spy_pct": 0.5
+      "ret_pct": 4.59,
+      "spy_pct": -1.3
      }
     },
     {
@@ -617,13 +675,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.064,
+     "r_now": 1.297,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.38,
+      "alpha_pct": 4.5,
       "final": false,
-      "ret_pct": 0.12,
-      "spy_pct": -0.26
+      "ret_pct": 2.44,
+      "spy_pct": -2.05
      }
     },
     {
@@ -636,13 +694,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.052,
+     "r_now": 0.263,
      "outcome": null,
      "vs": {
-      "alpha_pct": 0.2,
+      "alpha_pct": 3.48,
       "final": false,
-      "ret_pct": 0.37,
-      "spy_pct": 0.16
+      "ret_pct": 1.84,
+      "spy_pct": -1.63
      }
     }
    ]
@@ -860,13 +918,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.724,
+     "r_now": 0.983,
      "outcome": null,
      "vs": {
-      "alpha_pct": 4.36,
+      "alpha_pct": 7.26,
       "final": false,
-      "ret_pct": 3.13,
-      "spy_pct": -1.23
+      "ret_pct": 4.25,
+      "spy_pct": -3.0
      }
     },
     {
@@ -879,13 +937,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 0.433,
+     "r_now": 1.56,
      "outcome": null,
      "vs": {
-      "alpha_pct": 3.94,
+      "alpha_pct": 12.74,
       "final": false,
-      "ret_pct": 2.7,
-      "spy_pct": -1.23
+      "ret_pct": 9.74,
+      "spy_pct": -3.0
      }
     },
     {
@@ -898,13 +956,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 2.629,
+     "r_now": 2.354,
      "outcome": null,
      "vs": {
-      "alpha_pct": 15.15,
+      "alpha_pct": 15.47,
       "final": false,
-      "ret_pct": 13.92,
-      "spy_pct": -1.23
+      "ret_pct": 12.46,
+      "spy_pct": -3.0
      }
     }
    ]
@@ -940,13 +998,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 1.236,
+     "r_now": 1.397,
      "outcome": null,
      "vs": {
-      "alpha_pct": 8.54,
+      "alpha_pct": 11.36,
       "final": false,
-      "ret_pct": 7.88,
-      "spy_pct": -0.66
+      "ret_pct": 8.91,
+      "spy_pct": -2.45
      }
     },
     {
@@ -959,13 +1017,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.608,
+     "r_now": -0.285,
      "outcome": null,
      "vs": {
-      "alpha_pct": -4.46,
+      "alpha_pct": 0.04,
       "final": false,
-      "ret_pct": -5.12,
-      "spy_pct": -0.66
+      "ret_pct": -2.4,
+      "spy_pct": -2.45
      }
     },
     {
@@ -978,13 +1036,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": 1.34,
+     "r_now": 1.285,
      "outcome": null,
      "vs": {
-      "alpha_pct": 10.36,
+      "alpha_pct": 11.74,
       "final": false,
-      "ret_pct": 9.7,
-      "spy_pct": -0.66
+      "ret_pct": 9.3,
+      "spy_pct": -2.45
      }
     },
     {
@@ -1016,13 +1074,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.343,
+     "r_now": 0.037,
      "outcome": null,
      "vs": {
-      "alpha_pct": -2.46,
+      "alpha_pct": 2.54,
       "final": false,
-      "ret_pct": -2.9,
-      "spy_pct": -0.44
+      "ret_pct": 0.32,
+      "spy_pct": -2.23
      }
     }
    ]
@@ -1077,13 +1135,13 @@
      "status": "open",
      "r": null,
      "exit_reason": null,
-     "r_now": -0.262,
+     "r_now": 0.1,
      "outcome": null,
      "vs": {
-      "alpha_pct": -1.37,
+      "alpha_pct": 3.23,
       "final": false,
-      "ret_pct": -2.03,
-      "spy_pct": -0.67
+      "ret_pct": 0.78,
+      "spy_pct": -2.45
      }
     },
     {
@@ -1120,7 +1178,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": -0.131,
+    "r_now": 0.117,
     "fill": 69.395,
     "fill_t": "2026-10-23T19:15:00+00:00",
     "exit": null,
@@ -1154,7 +1212,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.01,
+    "r_now": -0.462,
     "fill": 448.46,
     "fill_t": "2026-10-23T13:40:00+00:00",
     "exit": null,
@@ -1171,7 +1229,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.357,
+    "r_now": 0.294,
     "fill": 116.565,
     "fill_t": "2026-10-23T13:40:00+00:00",
     "exit": null,
@@ -1188,7 +1246,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.247,
+    "r_now": 0.108,
     "fill": 633.905,
     "fill_t": "2026-10-22T19:15:00+00:00",
     "exit": null,
@@ -1205,7 +1263,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": -0.38,
+    "r_now": -0.323,
     "fill": 241.41,
     "fill_t": "2026-10-22T19:15:00+00:00",
     "exit": null,
@@ -1222,7 +1280,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": -0.594,
+    "r_now": -0.485,
     "fill": 324.91,
     "fill_t": "2026-10-22T13:40:00+00:00",
     "exit": null,
@@ -1256,7 +1314,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.992,
+    "r_now": 1.33,
     "fill": 652.66,
     "fill_t": "2026-10-22T13:40:00+00:00",
     "exit": null,
@@ -1290,7 +1348,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.365,
+    "r_now": 0.412,
     "fill": 42.26,
     "fill_t": "2026-10-22T13:35:00+00:00",
     "exit": null,
@@ -1307,7 +1365,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.696,
+    "r_now": 0.432,
     "fill": 110.13,
     "fill_t": "2026-10-21T13:40:00+00:00",
     "exit": null,
@@ -1324,7 +1382,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 1.04,
+    "r_now": 0.978,
     "fill": 110.72,
     "fill_t": "2026-10-21T13:40:00+00:00",
     "exit": null,
@@ -1341,7 +1399,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.696,
+    "r_now": 0.653,
     "fill": 125.1,
     "fill_t": "2026-10-21T13:40:00+00:00",
     "exit": null,
@@ -1358,7 +1416,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 1.159,
+    "r_now": 0.842,
     "fill": 107.55,
     "fill_t": "2026-10-20T19:15:00+00:00",
     "exit": null,
@@ -1375,7 +1433,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.792,
+    "r_now": 0.75,
     "fill": 124.02,
     "fill_t": "2026-10-20T19:15:00+00:00",
     "exit": null,
@@ -1392,7 +1450,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 1.675,
+    "r_now": 2.692,
     "fill": 57.8,
     "fill_t": "2026-10-20T13:45:00+00:00",
     "exit": null,
@@ -1409,7 +1467,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": -0.545,
+    "r_now": -0.353,
     "fill": 1021.96,
     "fill_t": "2026-10-20T13:40:00+00:00",
     "exit": null,
@@ -1426,7 +1484,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.43,
+    "r_now": 1.051,
     "fill": 239.552,
     "fill_t": "2026-10-20T13:40:00+00:00",
     "exit": null,
@@ -1443,7 +1501,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": -0.576,
+    "r_now": -0.563,
     "fill": 59.24,
     "fill_t": "2026-10-19T19:15:00+00:00",
     "exit": null,
@@ -1458,14 +1516,14 @@
     "stop": 698.0,
     "target": 730.0,
     "slot": "1210",
-    "status": "open",
-    "r": null,
-    "r_now": -0.194,
+    "status": "closed",
+    "r": -1.037,
+    "r_now": null,
     "fill": 719.5,
     "fill_t": "2026-10-19T19:15:00+00:00",
-    "exit": null,
-    "exit_t": null,
-    "reason": null
+    "exit": 697.21,
+    "exit_t": "2026-10-30T13:30:00+00:00",
+    "reason": "stop"
    },
    {
     "date": "2026-10-19",
@@ -1494,7 +1552,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.76,
+    "r_now": 0.235,
     "fill": 25.88,
     "fill_t": "2026-10-19T18:20:00+00:00",
     "exit": null,
@@ -1511,7 +1569,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.901,
+    "r_now": 0.86,
     "fill": 122.985,
     "fill_t": "2026-10-19T13:40:00+00:00",
     "exit": null,
@@ -1545,7 +1603,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.987,
+    "r_now": 0.943,
     "fill": 122.72,
     "fill_t": "2026-10-19T13:30:00+00:00",
     "exit": null,
@@ -1562,7 +1620,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.407,
+    "r_now": 0.683,
     "fill": 157.39,
     "fill_t": "2026-10-16T19:15:00+00:00",
     "exit": null,
@@ -1579,7 +1637,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.752,
+    "r_now": 0.974,
     "fill": 110.16,
     "fill_t": "2026-10-16T13:40:00+00:00",
     "exit": null,
@@ -1596,7 +1654,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.936,
+    "r_now": 1.175,
     "fill": 210.21,
     "fill_t": "2026-10-16T13:40:00+00:00",
     "exit": null,
@@ -1613,7 +1671,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 1.113,
+    "r_now": 1.784,
     "fill": 228.795,
     "fill_t": "2026-10-16T13:40:00+00:00",
     "exit": null,
@@ -1630,7 +1688,7 @@
     "slot": "1210",
     "status": "open",
     "r": null,
-    "r_now": 0.924,
+    "r_now": 0.887,
     "fill": 121.725,
     "fill_t": "2026-10-15T19:15:00+00:00",
     "exit": null,
@@ -1647,7 +1705,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.184,
+    "r_now": 0.492,
     "fill": 29.62,
     "fill_t": "2026-10-15T13:40:00+00:00",
     "exit": null,
@@ -1664,7 +1722,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 0.062,
+    "r_now": 0.093,
     "fill": 197.465,
     "fill_t": "2026-10-15T13:40:00+00:00",
     "exit": null,
@@ -1681,7 +1739,7 @@
     "slot": "0635",
     "status": "open",
     "r": null,
-    "r_now": 1.18,
+    "r_now": 1.431,
     "fill": 435.48,
     "fill_t": "2026-10-15T13:40:00+00:00",
     "exit": null,
@@ -1690,23 +1748,23 @@
    }
   ],
   "summary": {
-   "n": 5,
+   "n": 6,
    "win_pct": 0.0,
-   "avg_r": -1.039,
-   "total_r": -5.19,
-   "max_dd_r": -5.19
+   "avg_r": -1.038,
+   "total_r": -6.23,
+   "max_dd_r": -6.23
   },
-  "open": 29,
+  "open": 28,
   "from": "2026-10-15",
   "to": "2026-10-23"
  },
  "paper": {
   "spread": {
-   "n": 1,
+   "n": 3,
    "win_pct": 0.0,
-   "avg_r": -3.399,
-   "total_r": -3.4,
-   "max_dd_r": -3.4
+   "avg_r": -2.823,
+   "total_r": -8.47,
+   "max_dd_r": -8.47
   }
  }
 }

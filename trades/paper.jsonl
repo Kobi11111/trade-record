@@ -4,3 +4,4 @@
 {"book": "stock", "closed": "2026-11-04", "exit_reason": "stop", "key": "paper|2569", "opened": "2026-11-02", "r": -1.008, "recorded_at": "2026-11-04T22:00:34Z", "side": "long", "ticker": "CF"}
 {"book": "stock", "closed": "2026-11-05", "exit_reason": "target", "key": "paper|2666", "opened": "2026-11-02", "r": 0.385, "recorded_at": "2026-11-05T22:00:33Z", "side": "long", "ticker": "CTSH"}
 {"book": "stock", "closed": "2026-11-05", "exit_reason": "stop", "key": "paper|2962", "opened": "2026-11-04", "r": -1.707, "recorded_at": "2026-11-05T22:00:33Z", "side": "long", "ticker": "SHOO"}
+{"book": "stock", "closed": "2026-11-06", "exit_reason": "stop", "key": "paper|2953", "opened": "2026-11-04", "r": -0.923, "recorded_at": "2026-11-06T22:00:28Z", "side": "long", "ticker": "FOXA"}

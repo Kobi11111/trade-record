@@ -7,3 +7,5 @@
 {"book": "stock", "closed": "2026-11-06", "exit_reason": "stop", "key": "paper|2953", "opened": "2026-11-04", "r": -0.923, "recorded_at": "2026-11-06T22:00:28Z", "side": "long", "ticker": "FOXA"}
 {"book": "stock", "closed": "2026-11-12", "exit_reason": "stop", "key": "paper|2968", "opened": "2026-11-04", "r": -1.022, "recorded_at": "2026-11-12T22:00:22Z", "side": "long", "ticker": "TREX"}
 {"book": "stock", "closed": "2026-11-16", "exit_reason": "stop", "key": "paper|2682", "opened": "2026-11-02", "r": -1.06, "recorded_at": "2026-11-16T22:00:13Z", "side": "long", "ticker": "WING"}
+{"book": "stock", "closed": "2026-11-19", "exit_reason": "stop", "key": "paper|2612", "opened": "2026-11-02", "r": -1.012, "recorded_at": "2026-11-19T22:00:17Z", "side": "long", "ticker": "VRTX"}
+{"book": "stock", "closed": "2026-11-19", "exit_reason": "stop", "key": "paper|2956", "opened": "2026-11-04", "r": -1.026, "recorded_at": "2026-11-19T22:00:17Z", "side": "long", "ticker": "PFG"}

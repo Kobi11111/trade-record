@@ -9,3 +9,4 @@
 {"book": "stock", "closed": "2026-11-16", "exit_reason": "stop", "key": "paper|2682", "opened": "2026-11-02", "r": -1.06, "recorded_at": "2026-11-16T22:00:13Z", "side": "long", "ticker": "WING"}
 {"book": "stock", "closed": "2026-11-19", "exit_reason": "stop", "key": "paper|2612", "opened": "2026-11-02", "r": -1.012, "recorded_at": "2026-11-19T22:00:17Z", "side": "long", "ticker": "VRTX"}
 {"book": "stock", "closed": "2026-11-19", "exit_reason": "stop", "key": "paper|2956", "opened": "2026-11-04", "r": -1.026, "recorded_at": "2026-11-19T22:00:17Z", "side": "long", "ticker": "PFG"}
+{"book": "stock", "closed": "2026-11-20", "exit_reason": "target", "key": "paper|3830", "opened": "2026-11-16", "r": 0.701, "recorded_at": "2026-11-20T22:00:14Z", "side": "put", "ticker": "FORM"}

@@ -1,7 +1,7 @@
 {
  "start": "2026-10-07",
  "label": "Paper / hypothetical results \u2013 not real trades. Not investment advice.",
- "updated": "2026-11-25T22:00:14Z",
+ "updated": "2026-11-26T22:00:13Z",
  "repo": "https://github.com/Kobi11111/trade-record",
  "raw": "https://raw.githubusercontent.com/Kobi11111/trade-record/main",
  "summary": {
@@ -76,7 +76,7 @@
    "avg_spy_pct": -3.51
   }
  },
- "not_triggered": 24,
+ "not_triggered": 25,
  "rules_final": "2026-10-06",
  "days": [
   {
@@ -196,11 +196,11 @@
      "stop": 38.75,
      "target": 47.92,
      "slot": "0635",
-     "status": "waiting for entry",
+     "status": "not triggered",
      "r": null,
      "exit_reason": null,
      "r_now": null,
-     "outcome": null,
+     "outcome": "5-minute SIP bars",
      "vs": null
     },
     {
